@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Link HTML file to CSS stylesheet -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+      <script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+  </head>
+  <body>
+    <div class="hero-image" class="w3-round-large">
+      <div class="hero-text"> 
+        <h1 style="font-size:50px">Code Snippets</h1>
+ 
+      </div> 
+    </div>
+      <table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>14</td>
+  </tr>
+</table>
+      <h2>Display Alerts</h2>
+<p>The w3-panel class can be used to display alerts:</p>
+
+<div class="w3-panel w3-pale-red w3-border">
+  <h3>Danger!</h3>
+  <p>Red often indicates a dangerous or negative situation.</p>
+</div>
+
+<div class="w3-panel w3-red">
+  <h3>Danger!</h3>
+  <p>Red often indicates a dangerous or negative situation.</p>
+</div>
+      <div class="w3-container">
+  <h2>Striped Table</h2>
+  <p>The w3-striped class adds zebra-stripes to a table:</p>
+
+  <table class="w3-table w3-striped">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+    </tr>
+  </table>
+          
+</div>
+      <div id="flip" class="w3-card-2">Click to slide down panel</div>
+<div id="panel" class="w3-card-2">Hello world!</div>
+     <br>
+      <button>CLICK ME</button>
+      <br>
+      <span>I should be big if you hit the button</span>
+<br>
+      <div id="demo">
+<h2>The XMLHttpRequest Object In AJAX</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "ajax_info.txt");
+  xhttp.send();
+}
+</script>
+      <br>
+      <div class="w3-container">
+  <h2>Displaying Quotes</h2>
+  <p>The w3-panel class can be used to display quotes:</p>
+
+  <div class="w3-panel w3-leftbar w3-light-grey">
+    <p class="w3-xlarge w3-serif"><i>"Make it as simple as possible, but not simpler."</i></p>
+    <p>Albert Einstein</p>
+  </div>
+</div>
+      <footer class="w3-footer">
+      <h3 style="font-family: 'Bungee Shade';">MADE WITH W3.CSS</h3>
+      </footer>
+  </body>
+</html>
